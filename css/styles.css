@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Root Variables & Base Setup
+   ========================================================================== */
 :root {
     --bg-dark: #080b14;
     --glass-bg: rgba(20, 27, 45, 0.6);
@@ -20,7 +23,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Glassmorphism Cards */
+/* ==========================================================================
+   Glassmorphism Cards & Containers
+   ========================================================================== */
 .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -37,7 +42,9 @@ body {
     box-shadow: 0 16px 40px 0 rgba(0, 242, 254, 0.18);
 }
 
-/* Typography & Gradients */
+/* ==========================================================================
+   Typography & Gradients
+   ========================================================================== */
 .text-gradient {
     background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
     -webkit-background-clip: text;
@@ -48,7 +55,17 @@ body {
     color: var(--text-secondary) !important;
 }
 
-/* Glass Buttons */
+.hover-accent {
+    transition: color 0.3s ease;
+}
+
+.hover-accent:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 .btn-gradient {
     background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
     color: #080b14;
@@ -79,7 +96,9 @@ body {
     border-color: var(--accent-cyan);
 }
 
-/* Glass Navbar */
+/* ==========================================================================
+   Navigation Bar
+   ========================================================================== */
 .navbar {
     background: rgba(8, 11, 20, 0.75) !important;
     backdrop-filter: blur(20px);
@@ -92,11 +111,14 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover, 
+.nav-link.active {
     color: var(--accent-cyan) !important;
 }
 
-/* Skill Badges */
+/* ==========================================================================
+   Skill Badges & Tags
+   ========================================================================== */
 .skill-badge {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
@@ -118,7 +140,33 @@ body {
     transform: translateY(-2px);
 }
 
-/* Responsive Profile Image Sizing & Glow */
+/* ==========================================================================
+   Form Components (Contact Page)
+   ========================================================================== */
+.glass-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.25) !important;
+    outline: none;
+}
+
+.glass-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   Profile Image & Responsive Hero Controls
+   ========================================================================== */
 .profile-hero-img {
     width: 240px;
     height: 240px;
