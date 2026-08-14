@@ -1,161 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Projects</title>
-    <!-- Favicon-->
+    <title>Projects - Engr Bilawal Khan</title>
     <link rel="icon" type="image/x-icon" href="assets/MyProfile.png" />
-    <!-- Custom Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary text-gradient">Portfolio
-                    </span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand fw-bold fs-4" href="index.html">
+                    <span class="text-gradient">Bilawal Khan</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Projects Section-->
-        <section class="py-5">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Project Details </span></h1>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                   
-                   <!-- Project Card 2 -->
-<div class="card overflow-hidden shadow rounded-4 border-0">
-    <div class="card-body p-0">
-        <div class="row align-items-center">
-            <div class="col-md-6 p-5">
-                <h2 class="fw-bolder">Immersio NFT</h2>
-                <p>
-                    The aim of NFT (Non-Fungible Token) this websites is to provide a platform
-                    for creators, artists, and collectors to engage in the buying, selling, and
-                    showcasing of unique digital assets.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid m-auto p-4" src="assets/NFT web.jpg" alt="..." width="auto" height="auto" />
-            </div>
-        </div>
 
-        <!-- Carousel for bottom images -->
-        <div id="imageCarousel" class="carousel slide m-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col"><img class="img-fluid" src="assets/in1.jpg" alt="..." width="300" height="400" /></div>
-                        <div class="col"><img class="img-fluid" src="assets/in2.jpg" alt="..." width="300" height="400" /></div>
+        <section class="py-5 my-5">
+            <div class="container px-5 pt-4">
+                <div class="text-center mb-5" data-aos="fade-down">
+                    <h1 class="display-5 fw-bold mb-2"><span class="text-gradient">Featured Projects</span></h1>
+                    <p class="text-muted">A gallery of Web Engineering, Design, and Digital Platform work</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Project Card 1 -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
+                            <img src="assets/NFT web.jpg" class="card-img-top object-fit-cover" alt="Immersio NFT" style="height: 240px;" />
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Web Platform</span>
+                                <h3 class="fw-bold">Immersio NFT Marketplace</h3>
+                                <p class="text-muted flex-grow-1">
+                                    A high-performance portal designed for creators and digital collectors to showcase, buy, and trade unique NFT digital assets securely with standard wallet connectivity.
+                                </p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span class="skill-badge py-1 px-2 small">HTML/CSS</span>
+                                    <span class="skill-badge py-1 px-2 small">JavaScript</span>
+                                    <span class="skill-badge py-1 px-2 small">UI Design</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col"><img class="img-fluid" src="assets/in3.jpg" alt="..." width="300" height="400" /></div>
-                        <div class="col"><img class="img-fluid" src="assets/in4.jpg" alt="..." width="300" height="400" /></div>
+
+                    <!-- Project Card 2 -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
+                            <img src="assets/immersitect.jpg" class="card-img-top object-fit-cover" alt="Immersi Arch" style="height: 240px;" />
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Corporate Site</span>
+                                <h3 class="fw-bold">Immersi Arch Architecture</h3>
+                                <p class="text-muted flex-grow-1">
+                                    Architectural firm showcase platform engineered to highlight interior and exterior portfolio designs with full interactive gallery components.
+                                </p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span class="skill-badge py-1 px-2 small">Bootstrap 5</span>
+                                    <span class="skill-badge py-1 px-2 small">Responsive</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-        <div class="row align-items-center">
-            <div class="col-md-6 p-5">
-                <h2 class="fw-bolder">Immersi Arch</h2>
-                <p>Immersi Arch was designed and developed for Architecture Design. This
-                    organization is working on exterior and interior design.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid m-auto p-4" src="assets/immersitect.jpg" alt="..." width="auto" height="auto">
-            </div>
-        </div>
-    </div>
-</div>
+                    <!-- Project Card 3 -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
+                            <img src="assets/fr1.jpg" class="card-img-top object-fit-cover" alt="Fitness Room" style="height: 240px;" />
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Health & Fitness</span>
+                                <h3 class="fw-bold">Fitness Room Hub</h3>
+                                <p class="text-muted flex-grow-1">
+                                    Interactive web management dashboard built for fitness communities, scheduling workout classes, and tracking user progress.
+                                </p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span class="skill-badge py-1 px-2 small">jQuery</span>
+                                    <span class="skill-badge py-1 px-2 small">CSS Animations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
+                    <!-- Project Card 4 -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
+                            <img src="assets/s1.jpg" class="card-img-top object-fit-cover" alt="Spherical" style="height: 240px;" />
+                            <div class="p-4 flex-grow-1 d-flex flex-column">
+                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Agency Web</span>
+                                <h3 class="fw-bold">Spherical Digital Creatives</h3>
+                                <p class="text-muted flex-grow-1">
+                                    Agency application landing page showcasing custom branding solutions, digital experiences, and dynamic UI interactions.
+                                </p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span class="skill-badge py-1 px-2 small">React.js</span>
+                                    <span class="skill-badge py-1 px-2 small">Frontend</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Call to action section-->
-        <section class="py-5 bg-gradient-primary-to-secondary text-white">
-            <div class="container px-5 my-5">
-                <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+
+        <!-- CTA Section -->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="glass-card p-5 text-center" data-aos="zoom-in">
+                    <h2 class="display-5 fw-bold mb-3">Let's build something extraordinary</h2>
+                    <p class="text-muted lead mb-4">Interested in collaborating or discussing engineering solutions?</p>
+                    <a class="btn btn-gradient px-5 py-3 fs-6" href="contact.html">Get In Touch</a>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer-->
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
+
+    <!-- Footer -->
+    <footer class="py-4 mt-auto border-top border-secondary border-opacity-25">
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">
-                        Copyright &copy; <span class="copyRight">Engr Bilawal Khan <span id="currentYear"></span></span>
+                    <div class="small text-muted">
+                        Copyright &copy; Engr Bilawal Khan <span id="currentYear"></span>
                     </div>
                 </div>
                 <div class="col-auto">
-                    <a class="small" href="https://www.linkedin.com/in/engrbilawalkhanbilal/"><i
-                            class="bi bi-linkedin"></i></a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="https://twitter.com/EngrBilawalKhan"><i class="bi bi-twitter"></i></a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="https://www.youtube.com/@ZBAHTech"><i class="bi bi-youtube"></i></a>
+                    <a class="small me-2" href="https://www.linkedin.com/in/engrbilawalkhanbilal/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class="small me-2" href="https://twitter.com/EngrBilawalKhan" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a class="small" href="https://www.youtube.com/@ZBAHTech" target="_blank"><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Auto Typing JS-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/scripts.js"></script>
-    <!-- aos animation js -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(1200);
-        AOS.init({
-            duration: 1200,
-        })
-    </script>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
 </html>
