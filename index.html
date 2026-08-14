@@ -38,9 +38,18 @@
 
         <!-- Hero Section -->
         <header class="py-5 my-5">
-            <div class="container px-4 px-lg-5 pt-5">
+            <div class="container px-4 px-lg-5 pt-4 pt-lg-5">
                 <div class="row gx-5 align-items-center">
-                    <div class="col-lg-7" data-aos="fade-right">
+                    
+                    <!-- Profile Picture (Top on Mobile, Right on Desktop) -->
+                    <div class="col-lg-5 text-center mb-4 mb-lg-0 order-1 order-lg-2" data-aos="fade-down">
+                        <div class="profile-img-container d-inline-block">
+                            <img class="img-fluid rounded-circle profile-hero-img" src="assets/MyProfile.png" alt="Engr Bilawal Khan" />
+                        </div>
+                    </div>
+
+                    <!-- Hero Text Content (Below Picture on Mobile, Left on Desktop) -->
+                    <div class="col-lg-7 order-2 order-lg-1" data-aos="fade-up">
                         <div class="text-center text-lg-start">
                             <span class="badge bg-opacity-10 bg-info text-gradient px-3 py-2 rounded-pill mb-3 border border-info border-opacity-25">
                                 Open for Technical Leadership & Support Roles
@@ -50,7 +59,7 @@
                                 Enterprise <span class="auto-input text-gradient"></span>
                             </h1>
                             <p class="lead text-muted mb-4 pe-lg-4">
-                          Senior IT Application Support Engineer & Project Lead with expertise in enterprise banking platforms, Avaya Aura telephony, and Active Directory security, proven in driving major UAT rollouts like RAAST and Sestek Voice Biometrics while maintaining 99.9%+ system reliability.
+                                Senior IT Application Support Engineer and Project Lead with expertise in enterprise banking platforms, Avaya Aura telephony, and Active Directory security, proven in driving major UAT rollouts like RAAST and Sestek Voice Biometrics while maintaining high system reliability.
                             </p>
                             <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
                                 <a class="btn btn-gradient px-4 py-3" href="resume.html"><i class="bi bi-file-earmark-person me-2"></i> View Career History</a>
@@ -58,11 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 mt-5 mt-lg-0 text-center" data-aos="fade-left">
-                        <div class="profile-img-container d-inline-block">
-                            <img class="img-fluid rounded-circle" src="assets/MyProfile.png" alt="Engr Bilawal Khan" style="max-width: 310px;" />
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </header>
