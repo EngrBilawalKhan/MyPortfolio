@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Projects - Engr Bilawal Khan</title>
+    <title>Contact - Engr Bilawal Khan</title>
+    <!-- Assets Folder Path -->
     <link rel="icon" type="image/x-icon" href="assets/MyProfile.png" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS Folder Path -->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
@@ -27,8 +29,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,95 +38,48 @@
 
         <section class="py-5 my-5">
             <div class="container px-5 pt-4">
-                <div class="text-center mb-5" data-aos="fade-down">
-                    <h1 class="display-5 fw-bold mb-2"><span class="text-gradient">Featured Projects</span></h1>
-                    <p class="text-muted">A gallery of Web Engineering, Design, and Digital Platform work</p>
-                </div>
-
-                <div class="row g-4 justify-content-center">
-                    <!-- Project Card 1 -->
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
-                            <img src="assets/NFT web.jpg" class="card-img-top object-fit-cover" alt="Immersio NFT" style="height: 240px;" />
-                            <div class="p-4 flex-grow-1 d-flex flex-column">
-                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Web Platform</span>
-                                <h3 class="fw-bold">Immersio NFT Marketplace</h3>
-                                <p class="text-muted flex-grow-1">
-                                    A high-performance portal designed for creators and digital collectors to showcase, buy, and trade unique NFT digital assets securely with standard wallet connectivity.
-                                </p>
-                                <div class="d-flex gap-2 mt-3">
-                                    <span class="skill-badge py-1 px-2 small">HTML/CSS</span>
-                                    <span class="skill-badge py-1 px-2 small">JavaScript</span>
-                                    <span class="skill-badge py-1 px-2 small">UI Design</span>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="zoom-in">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-20 text-accent-blue rounded-circle p-3 mb-3">
+                                    <i class="bi bi-chat-dots fs-2"></i>
                                 </div>
+                                <h1 class="fw-bold mb-1"><span class="text-gradient">Get In Touch</span></h1>
+                                <p class="text-muted">Direct messaging via WhatsApp or Email inquiry</p>
                             </div>
+
+                            <form id="contactForm" onsubmit="sendWhatsAppMessage(event)">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="name" type="text" placeholder="Full name" required />
+                                            <label for="name">Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="email" type="email" placeholder="Email address" required />
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone number" required />
+                                    <label for="phone">Phone Number</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control" id="message" placeholder="Message" style="height: 10rem" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-gradient btn-lg py-3" type="submit">
+                                        <i class="bi bi-whatsapp me-2"></i> Send Direct WhatsApp Message
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
-                            <img src="assets/immersitect.jpg" class="card-img-top object-fit-cover" alt="Immersi Arch" style="height: 240px;" />
-                            <div class="p-4 flex-grow-1 d-flex flex-column">
-                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Corporate Site</span>
-                                <h3 class="fw-bold">Immersi Arch Architecture</h3>
-                                <p class="text-muted flex-grow-1">
-                                    Architectural firm showcase platform engineered to highlight interior and exterior portfolio designs with full interactive gallery components.
-                                </p>
-                                <div class="d-flex gap-2 mt-3">
-                                    <span class="skill-badge py-1 px-2 small">Bootstrap 5</span>
-                                    <span class="skill-badge py-1 px-2 small">Responsive</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
-                            <img src="assets/fr1.jpg" class="card-img-top object-fit-cover" alt="Fitness Room" style="height: 240px;" />
-                            <div class="p-4 flex-grow-1 d-flex flex-column">
-                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Health & Fitness</span>
-                                <h3 class="fw-bold">Fitness Room Hub</h3>
-                                <p class="text-muted flex-grow-1">
-                                    Interactive web management dashboard built for fitness communities, scheduling workout classes, and tracking user progress.
-                                </p>
-                                <div class="d-flex gap-2 mt-3">
-                                    <span class="skill-badge py-1 px-2 small">jQuery</span>
-                                    <span class="skill-badge py-1 px-2 small">CSS Animations</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4 -->
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="glass-card overflow-hidden h-100 d-flex flex-column">
-                            <img src="assets/s1.jpg" class="card-img-top object-fit-cover" alt="Spherical" style="height: 240px;" />
-                            <div class="p-4 flex-grow-1 d-flex flex-column">
-                                <span class="badge bg-primary bg-opacity-20 text-accent-blue w-auto align-self-start mb-2">Agency Web</span>
-                                <h3 class="fw-bold">Spherical Digital Creatives</h3>
-                                <p class="text-muted flex-grow-1">
-                                    Agency application landing page showcasing custom branding solutions, digital experiences, and dynamic UI interactions.
-                                </p>
-                                <div class="d-flex gap-2 mt-3">
-                                    <span class="skill-badge py-1 px-2 small">React.js</span>
-                                    <span class="skill-badge py-1 px-2 small">Frontend</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-5">
-            <div class="container px-5">
-                <div class="glass-card p-5 text-center" data-aos="zoom-in">
-                    <h2 class="display-5 fw-bold mb-3">Let's build something extraordinary</h2>
-                    <p class="text-muted lead mb-4">Interested in collaborating or discussing engineering solutions?</p>
-                    <a class="btn btn-gradient px-5 py-3 fs-6" href="contact.html">Get In Touch</a>
                 </div>
             </div>
         </section>
@@ -150,6 +105,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- JS Folder Path -->
     <script src="js/scripts.js"></script>
     <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
