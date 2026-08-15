@@ -38,7 +38,6 @@
 
         <!-- Main Content -->
         <div class="container px-4 px-lg-5 my-5 pt-5">
-            <!-- Header -->
             <div class="text-center mb-5 mt-4" data-aos="fade-down">
                 <span class="badge bg-opacity-10 bg-info text-gradient px-3 py-2 rounded-pill mb-3 border border-info border-opacity-25">
                     Let's Connect
@@ -57,9 +56,7 @@
                             <h3 class="fw-bold mb-4 text-gradient">Contact Information</h3>
                             
                             <div class="d-flex align-items-center mb-4">
-                                <div class="fs-3 text-gradient me-3">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </div>
+                                <div class="fs-3 text-gradient me-3"><i class="bi bi-envelope-fill"></i></div>
                                 <div>
                                     <span class="text-muted d-block small">Email</span>
                                     <a href="mailto:bilawalkhanjandan@gmail.com" class="text-white text-decoration-none fw-semibold">bilawalkhanjandan@gmail.com</a>
@@ -67,9 +64,7 @@
                             </div>
 
                             <div class="d-flex align-items-center mb-4">
-                                <div class="fs-3 text-gradient me-3">
-                                    <i class="bi bi-telephone-fill"></i>
-                                </div>
+                                <div class="fs-3 text-gradient me-3"><i class="bi bi-telephone-fill"></i></div>
                                 <div>
                                     <span class="text-muted d-block small">Phone</span>
                                     <a href="tel:+923432512522" class="text-white text-decoration-none fw-semibold">+92 343 2512522</a>
@@ -77,9 +72,7 @@
                             </div>
 
                             <div class="d-flex align-items-center mb-4">
-                                <div class="fs-3 text-gradient me-3">
-                                    <i class="bi bi-linkedin"></i>
-                                </div>
+                                <div class="fs-3 text-gradient me-3"><i class="bi bi-linkedin"></i></div>
                                 <div>
                                     <span class="text-muted d-block small">LinkedIn</span>
                                     <a href="https://linkedin.com/in/engrbilawalkhanbilal" target="_blank" class="text-white text-decoration-none fw-semibold">engrbilawalkhanbilal</a>
@@ -87,9 +80,7 @@
                             </div>
 
                             <div class="d-flex align-items-center mb-4">
-                                <div class="fs-3 text-gradient me-3">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </div>
+                                <div class="fs-3 text-gradient me-3"><i class="bi bi-geo-alt-fill"></i></div>
                                 <div>
                                     <span class="text-muted d-block small">Location</span>
                                     <span class="text-white fw-semibold">Karachi, Pakistan</span>
@@ -97,7 +88,6 @@
                             </div>
                         </div>
 
-                        <!-- Availability Card -->
                         <div class="p-3 rounded-4 glass-card border-0 bg-opacity-10 bg-white mt-4">
                             <div class="d-flex align-items-center gap-2">
                                 <span class="spinner-grow spinner-grow-sm text-info" role="status"></span>
@@ -111,23 +101,28 @@
                 <div class="col-lg-7" data-aos="fade-left">
                     <div class="glass-card p-4 p-md-5 h-100">
                         <h3 class="fw-bold mb-4 text-gradient">Send a Message</h3>
-                        <form id="contactForm">
+                        <form action="https://formsubmit.co/bilawalkhanjandan@gmail.com" method="POST">
+                            <!-- Redirect back to contact page after sending -->
+                            <input type="hidden" name="_next" value="https://engrbilawalkhanbilal.github.io/contact.html">
+                            <!-- Prevents Spam Captchas (Optional) -->
+                            <input type="hidden" name="_captcha" value="false">
+
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="name" class="form-label text-muted small fw-semibold">Your Name</label>
-                                    <input type="text" class="form-control glass-input" id="name" placeholder="John Doe" required>
+                                    <input type="text" name="name" class="form-control glass-input" id="name" placeholder="John Doe" required />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label text-muted small fw-semibold">Your Email</label>
-                                    <input type="email" class="form-control glass-input" id="email" placeholder="name@example.com" required>
+                                    <input type="email" name="email" class="form-control glass-input" id="email" placeholder="name@example.com" required />
                                 </div>
                                 <div class="col-12">
                                     <label for="subject" class="form-label text-muted small fw-semibold">Subject</label>
-                                    <input type="text" class="form-control glass-input" id="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                                    <input type="text" name="_subject" class="form-control glass-input" id="subject" placeholder="Project Inquiry / Job Opportunity" required />
                                 </div>
                                 <div class="col-12">
                                     <label for="message" class="form-label text-muted small fw-semibold">Message</label>
-                                    <textarea class="form-control glass-input" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                    <textarea name="message" class="form-control glass-input" id="message" rows="5" placeholder="Write your message here..." required></textarea>
                                 </div>
                                 <div class="col-12 mt-4">
                                     <button type="submit" class="btn btn-gradient w-100 py-3 d-flex align-items-center justify-content-center gap-2">
@@ -157,6 +152,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
