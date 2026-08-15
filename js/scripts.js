@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending...';
             }
 
-            // Replace YOUR_SERVICE_ID and YOUR_TEMPLATE_ID with actual keys from EmailJS dashboard
+            // Replace Service ID and Template ID with your actual EmailJS keys
             emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
                 .then(() => {
                     alert('Message sent successfully!');
