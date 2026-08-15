@@ -101,24 +101,19 @@
                 <div class="col-lg-7" data-aos="fade-left">
                     <div class="glass-card p-4 p-md-5 h-100">
                         <h3 class="fw-bold mb-4 text-gradient">Send a Message</h3>
-                        <form action="https://formsubmit.co/bilawalkhanjandan@gmail.com" method="POST">
-                            <!-- Redirect back to contact page after sending -->
-                            <input type="hidden" name="_next" value="https://engrbilawalkhanbilal.github.io/contact.html">
-                            <!-- Prevents Spam Captchas (Optional) -->
-                            <input type="hidden" name="_captcha" value="false">
-
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="name" class="form-label text-muted small fw-semibold">Your Name</label>
-                                    <input type="text" name="name" class="form-control glass-input" id="name" placeholder="John Doe" required />
+                                    <input type="text" name="from_name" class="form-control glass-input" id="name" placeholder="John Doe" required />
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label text-muted small fw-semibold">Your Email</label>
-                                    <input type="email" name="email" class="form-control glass-input" id="email" placeholder="name@example.com" required />
+                                    <input type="email" name="from_email" class="form-control glass-input" id="email" placeholder="name@example.com" required />
                                 </div>
                                 <div class="col-12">
                                     <label for="subject" class="form-label text-muted small fw-semibold">Subject</label>
-                                    <input type="text" name="_subject" class="form-control glass-input" id="subject" placeholder="Project Inquiry / Job Opportunity" required />
+                                    <input type="text" name="subject" class="form-control glass-input" id="subject" placeholder="Project Inquiry / Job Opportunity" required />
                                 </div>
                                 <div class="col-12">
                                     <label for="message" class="form-label text-muted small fw-semibold">Message</label>
@@ -155,10 +150,17 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            // Initialize EmailJS with your Public Key
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
     <script src="js/scripts.js"></script>
     <script>
         AOS.init({ duration: 800, once: true });
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
